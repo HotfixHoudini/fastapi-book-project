@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /home/ubuntu/hng12/book-api/app/
+            cd /home/ubuntu/hng12-book-api/app/
             git pull origin main
             docker-compose down
             docker-compose up --build -d
